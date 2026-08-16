@@ -30,13 +30,13 @@ const SITE_DATA = {
     { label: "Contact", href: "contact.html" },
   ],
   contact: {
-    phone: "+237 XXX XXX XXX",       // PLACEHOLDER — replace with real phone
-    phoneHref: "tel:+237XXXXXXXXX",  // PLACEHOLDER
-    whatsapp: "+237 XXX XXX XXX",    // PLACEHOLDER
-    whatsappHref: "https://wa.me/237XXXXXXXXX", // PLACEHOLDER
+    phone: "+237 671 69 40 35",       // PLACEHOLDER — replace with real phone
+    phoneHref: "tel:+237671694035",  // PLACEHOLDER
+    whatsapp: "+237 671 69 40 35",    // PLACEHOLDER
+    whatsappHref: "https://wa.me/237671694035?text=Hello%20MCK%20Construction,%20I%20found%20your%20website%20and%20would%20like%20to%20make%20an%20inquiry.", // PLACEHOLDER
     email: "info@mck-construction-PLACEHOLDER.com", // PLACEHOLDER
     emailHref: "mailto:info@mck-construction-PLACEHOLDER.com", // PLACEHOLDER
-    address: "[OFFICE ADDRESS], [CITY], CAMEROON", // PLACEHOLDER
+    address: "[OFFICE ADDRESS], BAMENDA, CAMEROON", // PLACEHOLDER
   },
   social: [
     { label: "Facebook", href: "#", icon: "f" },   // PLACEHOLDER link
