@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students & Internships | MCK Construction</title>
+  <meta name="description" content="Apply for an internship at MCK Construction — hands-on construction site experience, mentorship, and professional development across our departments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="students.html">
+
+  <div id="site-header-root"></div>
+
+  <main>
+
+    <!-- ============ STUDENTS HERO (sliding background) ============ -->
+    <section class="students-hero bg-slider" id="students-hero" aria-label="Internship opportunities">
+      <!-- IMAGE PLACEHOLDER: student-hero-01.jpg — internship on-site, 1920x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/students/student-hero-01.jpg');"></div>
+      <!-- IMAGE PLACEHOLDER: student-hero-02.jpg — mentorship, 1920x1000 -->
+      <div class="bg-slider__slide" style="background-image: url('assets/images/students/student-hero-02.jpg');"></div>
+      <!-- IMAGE PLACEHOLDER: student-hero-03.jpg — training, 1920x1000 -->
+      <div class="bg-slider__slide" style="background-image: url('assets/images/students/student-hero-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <span class="eyebrow">Students &amp; Internships</span>
+        <h1>Build Your Future With MCK</h1>
+        <p>Hands-on experience across our construction departments — real sites, real mentorship, real skills.</p>
+
+        <div class="slider-controls" style="position: static; margin-top: 28px; padding: 0;">
+          <div class="slider-dots"></div>
+          <div class="slider-controls__arrows">
+            <button class="slider-arrow prev" aria-label="Previous background">&#8592;</button>
+            <button class="slider-arrow next" aria-label="Next background">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT YOU GET ============ -->
+    <section class="section" data-animate>
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow" style="justify-content:center;">Internship Program</span>
+          <h2>What You'll Gain</h2>
+          <p>Our internship program is built around real exposure, not busywork.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card feature-card">
+            <div class="feature-card__icon">&#127959;</div>
+            <h3>Internship Opportunities</h3>
+            <p>Placements across our construction departments, matched to your field of study.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">&#128295;</div>
+            <h3>Practical Experience</h3>
+            <p>Hands-on involvement in active projects, not just observation.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">&#129309;</div>
+            <h3>Mentorship</h3>
+            <p>Guidance from experienced department heads and team leads.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">&#128737;</div>
+            <h3>Construction Site Exposure</h3>
+            <p>Real on-site experience under proper safety supervision.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">&#128200;</div>
+            <h3>Professional Development</h3>
+            <p>Skills and workplace experience to carry into your career.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">&#128260;</div>
+            <h3>Department Rotations</h3>
+            <p>Exposure across multiple departments, where applicable to your program.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERNSHIP APPLICATION FORM ============ -->
+    <section class="section bg-light" data-animate>
+      <div class="container" style="max-width: 860px;">
+        <div class="section-heading center">
+          <span class="eyebrow" style="justify-content:center;">Apply Now</span>
+          <h2>Internship Application</h2>
+          <p>Fill in your details below. Fields marked <span class="required">*</span> are required.</p>
+        </div>
+
+        <form id="internship-form" class="card" style="padding: 40px;" novalidate>
+
+          <!-- PERSONAL INFORMATION -->
+          <div class="form-section-title">Personal Information</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="full-name" name="fullName" required>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth <span class="required">*</span></label>
+              <input type="date" id="dob" name="dateOfBirth" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="">Select...</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Home Address</label>
+              <input type="text" id="address" name="address">
+            </div>
+          </div>
+
+          <!-- ACADEMIC INFORMATION -->
+          <div class="form-section-title">Academic Information</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="institution">Institution <span class="required">*</span></label>
+              <input type="text" id="institution" name="institution" required>
+            </div>
+            <div class="form-group">
+              <label for="program">Program of Study <span class="required">*</span></label>
+              <input type="text" id="program" name="program" required>
+            </div>
+            <div class="form-group">
+              <label for="level">Level</label>
+              <select id="level" name="level">
+                <option value="">Select...</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+                <option value="technical">Technical / Vocational</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="specialization">Specialization</label>
+              <input type="text" id="specialization" name="specialization">
+            </div>
+            <div class="form-group full">
+              <label for="graduation">Expected Graduation</label>
+              <input type="month" id="graduation" name="expectedGraduation">
+            </div>
+          </div>
+
+          <!-- INTERNSHIP DETAILS -->
+          <div class="form-section-title">Internship Details</div>
+          <div class="form-grid">
+            <div class="form-group full">
+              <label for="desired-department">Desired Department <span class="required">*</span></label>
+              <select id="desired-department" name="desiredDepartment" required>
+                <option value="">Select a department...</option>
+                <option value="architecture">Architecture</option>
+                <option value="building">Building Construction</option>
+                <option value="civil">Civil Works</option>
+                <option value="roofing">Roofing</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="electrical">Electrical Installation</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="masonry">Masonry</option>
+                <option value="welding">Steel &amp; Welding</option>
+                <option value="painting">Painting</option>
+                <option value="tiling">Tiling</option>
+                <option value="interior">Interior Finishing</option>
+                <option value="landscaping">Landscaping</option>
+                <option value="quantity-surveying">Quantity Surveying</option>
+                <option value="project-management">Project Management</option>
+                <option value="site-supervision">Site Supervision</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="start-date">Preferred Start Date</label>
+              <input type="date" id="start-date" name="startDate">
+            </div>
+            <div class="form-group">
+              <label for="end-date">Preferred End Date</label>
+              <input type="date" id="end-date" name="endDate">
+            </div>
+            <div class="form-group full">
+              <label for="duration">Duration</label>
+              <select id="duration" name="duration">
+                <option value="">Select...</option>
+                <option value="1-month">1 Month</option>
+                <option value="3-months">3 Months</option>
+                <option value="6-months">6 Months</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- ADDITIONAL INFORMATION -->
+          <div class="form-section-title">Additional Information</div>
+          <div class="form-grid">
+            <div class="form-group full">
+              <label for="skills">Relevant Skills</label>
+              <textarea id="skills" name="skills" rows="3"></textarea>
+            </div>
+            <div class="form-group full">
+              <label for="experience">Previous Experience</label>
+              <textarea id="experience" name="previousExperience" rows="3"></textarea>
+            </div>
+            <div class="form-group full">
+              <label for="why-mck">Why MCK?</label>
+              <textarea id="why-mck" name="whyMck" rows="3"></textarea>
+            </div>
+            <div class="form-group full">
+              <label for="career-goals">Career Goals</label>
+              <textarea id="career-goals" name="careerGoals" rows="3"></textarea>
+            </div>
+          </div>
+
+          <!-- DOCUMENTS -->
+          <div class="form-section-title">Documents</div>
+          <div class="form-grid">
+            <div class="form-group full">
+              <label for="cv">CV / Resume <span class="required">*</span></label>
+              <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+              <span class="hint">PDF or Word document, max 5MB.</span>
+            </div>
+            <div class="form-group full">
+              <label for="request-letter">Internship Request Letter</label>
+              <input type="file" id="request-letter" name="requestLetter" accept=".pdf,.doc,.docx">
+              <span class="hint">PDF or Word document, max 5MB.</span>
+            </div>
+            <div class="form-group full">
+              <label for="school-document">School Document</label>
+              <input type="file" id="school-document" name="schoolDocument" accept=".pdf,.doc,.docx,.jpg,.png">
+              <span class="hint">Enrollment letter, transcript, or similar. Max 5MB.</span>
+            </div>
+          </div>
+
+          <!-- CONSENT -->
+          <div class="form-check" style="margin-top: 28px;">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+              I confirm the information provided is accurate and I consent to
+              MCK Construction storing it for the purpose of reviewing this
+              internship application. <span class="required">*</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 28px;">Submit Application</button>
+
+          <div class="form-status" id="internship-form-status"></div>
+
+          <p class="form-note">
+            This form is not yet connected to a backend or email service.
+            Submitting it will not send your application until a form
+            processor is wired up — see the comment in
+            <code>js/main.js</code> for where to connect one.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-root"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function initPage() {
+      new BackgroundSlider("#students-hero", { interval: 5000 });
+      initFormHandler("#internship-form", "#internship-form-status");
+    }
+  </script>
+</body>
+</html>

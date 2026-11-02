@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departments | MCK Construction</title>
+  <meta name="description" content="Meet MCK Construction's specialized departments and their heads — from architecture and building construction to electrical, plumbing, and maintenance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Sticky in-page department menu, specific to this page only */
+    .dept-nav {
+      position: sticky;
+      top: var(--header-height);
+      z-index: 500;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .dept-nav__list { display: inline-flex; gap: 4px; padding: 14px var(--gutter); }
+    .dept-nav__list a {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      border-radius: 20px;
+      transition: background var(--transition), color var(--transition);
+    }
+    .dept-nav__list a:hover { background: var(--light); }
+  </style>
+</head>
+<body data-page="departments.html">
+
+  <div id="site-header-root"></div>
+
+  <main>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Our Organization</span>
+        <h1>Departments</h1>
+        <p class="page-hero__crumbs"><a href="index.html">Home</a> / Departments</p>
+      </div>
+    </section>
+
+    <!-- ============ DEPARTMENT QUICK NAV ============
+         EDITABLE: this list should match MCK's actual departments.
+         Non-slider departments (Executive Management, Quantity Surveying,
+         Project Management, Site Supervision, Procurement, Health & Safety)
+         are listed on the Leadership page instead, since this page's design
+         is built around the 14 departments that have their own background
+         sliders. Add/remove <li> entries here and a matching section below
+         to change that. -->
+    <nav class="dept-nav" aria-label="Jump to department">
+      <ul class="dept-nav__list">
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#building">Building Construction</a></li>
+          <li><a href="#civil">Civil Works</a></li>
+          <li><a href="#roofing">Roofing</a></li>
+          <li><a href="#plumbing">Plumbing</a></li>
+          <li><a href="#electrical">Electrical Installation</a></li>
+          <li><a href="#carpentry">Carpentry</a></li>
+          <li><a href="#masonry">Masonry</a></li>
+          <li><a href="#welding">Steel & Welding</a></li>
+          <li><a href="#painting">Painting</a></li>
+          <li><a href="#tiling">Tiling</a></li>
+          <li><a href="#interior">Interior Finishing</a></li>
+          <li><a href="#landscaping">Landscaping</a></li>
+          <li><a href="#maintenance">Maintenance</a></li>
+      </ul>
+    </nav>
+
+    
+    <!-- ============ ARCHITECTURE ============ -->
+    <section class="dept-block bg-slider" id="architecture" data-slider="architecture">
+      <!-- IMAGE PLACEHOLDER: architecture-01.jpg, architecture-02.jpg, architecture-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/architecture/architecture-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/architecture/architecture-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/architecture/architecture-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Architecture</h2>
+          <p>Concept design through detailed architectural drawings and planning.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Architecture background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Architecture background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: architecture-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/architecture-head.jpg" alt="PLACEHOLDER: Head of Architecture">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Architecture</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Design development</li>
+              <li>Drawings and specifications</li>
+              <li>Planning coordination</li>
+              <li>Design-stage client liaison</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ BUILDING CONSTRUCTION ============ -->
+    <section class="dept-block bg-slider" id="building" data-slider="building">
+      <!-- IMAGE PLACEHOLDER: building-01.jpg, building-02.jpg, building-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/building/building-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/building/building-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/building/building-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Building Construction</h2>
+          <p>Core structural building work across residential, commercial, and industrial projects.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Building Construction background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Building Construction background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: building-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/building-head.jpg" alt="PLACEHOLDER: Head of Building Construction">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Building Construction</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Structural construction</li>
+              <li>Site coordination</li>
+              <li>Materials oversight</li>
+              <li>Build-phase quality control</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ CIVIL WORKS ============ -->
+    <section class="dept-block bg-slider" id="civil" data-slider="civil">
+      <!-- IMAGE PLACEHOLDER: civil-01.jpg, civil-02.jpg, civil-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/civil/civil-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/civil/civil-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/civil/civil-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Civil Works</h2>
+          <p>Site preparation, earthworks, and civil engineering for every project type.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Civil Works background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Civil Works background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: civil-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/civil-head.jpg" alt="PLACEHOLDER: Head of Civil Works">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Civil Works</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Site grading and earthworks</li>
+              <li>Drainage and civil infrastructure</li>
+              <li>Foundation preparation</li>
+              <li>Civil engineering oversight</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ ROOFING ============ -->
+    <section class="dept-block bg-slider" id="roofing" data-slider="roofing">
+      <!-- IMAGE PLACEHOLDER: roofing-01.jpg, roofing-02.jpg, roofing-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/roofing/roofing-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/roofing/roofing-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/roofing/roofing-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Roofing</h2>
+          <p>Roof installation and repair across residential, commercial, and industrial buildings.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Roofing background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Roofing background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: roofing-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/roofing-head.jpg" alt="PLACEHOLDER: Head of Roofing">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Roofing</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Roof installation</li>
+              <li>Roof repair and maintenance</li>
+              <li>Material selection guidance</li>
+              <li>Weatherproofing</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ PLUMBING ============ -->
+    <section class="dept-block bg-slider" id="plumbing" data-slider="plumbing">
+      <!-- IMAGE PLACEHOLDER: plumbing-01.jpg, plumbing-02.jpg, plumbing-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/plumbing/plumbing-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/plumbing/plumbing-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/plumbing/plumbing-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Plumbing</h2>
+          <p>Complete plumbing systems for every building type we construct.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Plumbing background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Plumbing background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: plumbing-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/plumbing-head.jpg" alt="PLACEHOLDER: Head of Plumbing">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Plumbing</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>System design and installation</li>
+              <li>Fixture installation</li>
+              <li>Pipe and drainage work</li>
+              <li>Plumbing inspections</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ ELECTRICAL INSTALLATION ============ -->
+    <section class="dept-block bg-slider" id="electrical" data-slider="electrical">
+      <!-- IMAGE PLACEHOLDER: electrical-01.jpg, electrical-02.jpg, electrical-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/electrical/electrical-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/electrical/electrical-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/electrical/electrical-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Electrical Installation</h2>
+          <p>Electrical installation handled by certified teams, start to finish.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Electrical Installation background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Electrical Installation background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: electrical-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/electrical-head.jpg" alt="PLACEHOLDER: Head of Electrical Installation">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Electrical Installation</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Wiring and installation</li>
+              <li>Electrical system design</li>
+              <li>Safety compliance checks</li>
+              <li>Fixture and panel installation</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ CARPENTRY ============ -->
+    <section class="dept-block bg-slider" id="carpentry" data-slider="carpentry">
+      <!-- IMAGE PLACEHOLDER: carpentry-01.jpg, carpentry-02.jpg, carpentry-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/carpentry/carpentry-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/carpentry/carpentry-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/carpentry/carpentry-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Carpentry</h2>
+          <p>Structural and finish carpentry across all project types.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Carpentry background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Carpentry background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: carpentry-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/carpentry-head.jpg" alt="PLACEHOLDER: Head of Carpentry">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Carpentry</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Framing and structural carpentry</li>
+              <li>Finish carpentry</li>
+              <li>Custom fittings</li>
+              <li>Woodwork quality control</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ MASONRY ============ -->
+    <section class="dept-block bg-slider" id="masonry" data-slider="masonry">
+      <!-- IMAGE PLACEHOLDER: masonry-01.jpg, masonry-02.jpg, masonry-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/masonry/masonry-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/masonry/masonry-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/masonry/masonry-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Masonry</h2>
+          <p>Block work, brickwork, and stone masonry built to last.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Masonry background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Masonry background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: masonry-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/masonry-head.jpg" alt="PLACEHOLDER: Head of Masonry">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Masonry</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Block and brick laying</li>
+              <li>Stonework</li>
+              <li>Masonry repair</li>
+              <li>Structural masonry support</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ STEEL & WELDING ============ -->
+    <section class="dept-block bg-slider" id="welding" data-slider="welding">
+      <!-- IMAGE PLACEHOLDER: welding-01.jpg, welding-02.jpg, welding-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/welding/welding-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/welding/welding-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/welding/welding-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Steel & Welding</h2>
+          <p>Structural steel and metal fabrication for industrial and commercial builds.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Steel & Welding background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Steel & Welding background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: welding-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/welding-head.jpg" alt="PLACEHOLDER: Head of Steel & Welding">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Steel & Welding</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Structural steel fabrication</li>
+              <li>On-site welding</li>
+              <li>Metal framework installation</li>
+              <li>Weld inspection</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ PAINTING ============ -->
+    <section class="dept-block bg-slider" id="painting" data-slider="painting">
+      <!-- IMAGE PLACEHOLDER: painting-01.jpg, painting-02.jpg, painting-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/painting/painting-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/painting/painting-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/painting/painting-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Painting</h2>
+          <p>Interior and exterior painting finished to a professional standard.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Painting background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Painting background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: painting-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/painting-head.jpg" alt="PLACEHOLDER: Head of Painting">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Painting</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Surface preparation</li>
+              <li>Interior painting</li>
+              <li>Exterior painting</li>
+              <li>Finish quality control</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ TILING ============ -->
+    <section class="dept-block bg-slider" id="tiling" data-slider="tiling">
+      <!-- IMAGE PLACEHOLDER: tiling-01.jpg, tiling-02.jpg, tiling-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/tiling/tiling-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/tiling/tiling-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/tiling/tiling-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Tiling</h2>
+          <p>Floor and wall tiling across residential and commercial projects.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Tiling background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Tiling background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: tiling-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/tiling-head.jpg" alt="PLACEHOLDER: Head of Tiling">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Tiling</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Floor tiling</li>
+              <li>Wall tiling</li>
+              <li>Material and layout guidance</li>
+              <li>Finish inspection</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ INTERIOR FINISHING ============ -->
+    <section class="dept-block bg-slider" id="interior" data-slider="interior">
+      <!-- IMAGE PLACEHOLDER: interior-01.jpg, interior-02.jpg, interior-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/interior/interior-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/interior/interior-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/interior/interior-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Interior Finishing</h2>
+          <p>Final interior detailing that brings a project to completion.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Interior Finishing background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Interior Finishing background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: interior-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/interior-head.jpg" alt="PLACEHOLDER: Head of Interior Finishing">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Interior Finishing</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Interior detailing</li>
+              <li>Fixtures and fittings</li>
+              <li>Finish coordination</li>
+              <li>Final walkthroughs</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ LANDSCAPING ============ -->
+    <section class="dept-block bg-slider" id="landscaping" data-slider="landscaping">
+      <!-- IMAGE PLACEHOLDER: landscaping-01.jpg, landscaping-02.jpg, landscaping-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/landscaping/landscaping-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/landscaping/landscaping-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/landscaping/landscaping-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Landscaping</h2>
+          <p>Grounds and landscape design around completed projects.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Landscaping background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Landscaping background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: landscaping-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/landscaping-head.jpg" alt="PLACEHOLDER: Head of Landscaping">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Landscaping</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Landscape design</li>
+              <li>Grounds preparation</li>
+              <li>Planting and hardscaping</li>
+              <li>Exterior grounds maintenance</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ MAINTENANCE ============ -->
+    <section class="dept-block bg-slider" id="maintenance" data-slider="maintenance">
+      <!-- IMAGE PLACEHOLDER: maintenance-01.jpg, maintenance-02.jpg, maintenance-03.jpg — department background, 1600x1000 -->
+      <div class="bg-slider__slide is-active" style="background-image: url('assets/images/departments/maintenance/maintenance-01.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/maintenance/maintenance-02.jpg');"></div>
+      <div class="bg-slider__slide" style="background-image: url('assets/images/departments/maintenance/maintenance-03.jpg');"></div>
+      <div class="bg-slider__overlay"></div>
+
+      <div class="bg-slider__content">
+        <div class="dept-block__info" data-animate>
+          <span class="eyebrow">Department</span>
+          <h2>Maintenance</h2>
+          <p>Ongoing upkeep and support after project handover.</p>
+
+          <div class="slider-controls" style="position: static; margin-top: 8px;">
+            <div class="slider-dots"></div>
+            <div class="slider-controls__arrows">
+              <button class="slider-arrow prev" aria-label="Previous Maintenance background">&#8592;</button>
+              <button class="slider-arrow next" aria-label="Next Maintenance background">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-block__head" data-animate>
+          <!-- IMAGE PLACEHOLDER: maintenance-head.jpg — headshot, 400x400 -->
+          <img src="assets/images/team/maintenance-head.jpg" alt="PLACEHOLDER: Head of Maintenance">
+          <h4>[HEAD OF DEPARTMENT NAME]</h4>
+          <div class="position">Head of Maintenance</div>
+          <p class="bio">[SHORT PROFESSIONAL BIO — replace with the department head's real background and experience.]</p>
+
+          <ul class="responsibilities">
+              <li>Post-handover maintenance</li>
+              <li>Scheduled servicing</li>
+              <li>Repair call-outs</li>
+              <li>Maintenance planning</li>
+          </ul>
+
+          <div class="dept-block__contact">
+            <a href="tel:[HEAD PHONE]">Call</a>
+            <a href="https://wa.me/[HEAD WHATSAPP]">WhatsApp</a>
+            <a href="mailto:[HEAD EMAIL]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <div id="site-footer-root"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function initPage() {
+      new BackgroundSlider(document.querySelector('[data-slider="architecture"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="building"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="civil"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="roofing"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="plumbing"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="electrical"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="carpentry"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="masonry"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="welding"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="painting"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="tiling"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="interior"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="landscaping"]'), { interval: 5000 });
+      new BackgroundSlider(document.querySelector('[data-slider="maintenance"]'), { interval: 5000 });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | MCK Construction</title>
+  <meta name="description" content="Get in touch with MCK Construction — call, WhatsApp, email, or send us your project details directly through our contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact.html">
+
+  <div id="site-header-root"></div>
+
+  <main>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Contact Us</h1>
+        <p class="page-hero__crumbs"><a href="index.html">Home</a> / Contact</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT METHODS ============ -->
+    <section class="section tight" data-animate>
+      <div class="container">
+        <div class="grid grid-4">
+
+          <div class="card feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin: 0 auto 20px;">&#128222;</div>
+            <h3>Call Us</h3>
+            <!-- CONTACT PLACEHOLDER: replace phone number -->
+            <p style="margin-bottom: 16px;">+237 XXX XXX XXX</p>
+            <a href="tel:+237XXXXXXXXX" class="btn btn-dark" style="width:100%;">Call Now</a>
+          </div>
+
+          <div class="card feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin: 0 auto 20px;">&#128172;</div>
+            <h3>WhatsApp</h3>
+            <!-- CONTACT PLACEHOLDER: replace phone number -->
+            <p style="margin-bottom: 16px;">+237 XXX XXX XXX</p>
+            <!-- CONTACT PLACEHOLDER: replace number in href below. The
+                 ?text= parameter pre-fills a default message in the chat
+                 window the moment someone opens it — edit the message text
+                 here (and the matching copy in js/main.js SITE_DATA) if you
+                 want to change the wording. -->
+            <a href="https://wa.me/237XXXXXXXXX?text=Hello%20MCK%20Construction%2C%20I%20would%20like%20to%20enquire%20about%20a%20project."
+               class="btn btn-dark" style="width:100%;" target="_blank" rel="noopener">
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="card feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin: 0 auto 20px;">&#9993;</div>
+            <h3>Email</h3>
+            <!-- CONTACT PLACEHOLDER: replace email address -->
+            <p style="margin-bottom: 16px; word-break: break-all;">info@mck-construction-PLACEHOLDER.com</p>
+            <a href="mailto:info@mck-construction-PLACEHOLDER.com" class="btn btn-dark" style="width:100%;">Send Email</a>
+          </div>
+
+          <div class="card feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin: 0 auto 20px;">&#128205;</div>
+            <h3>Office</h3>
+            <!-- CONTACT PLACEHOLDER: replace office address -->
+            <p style="margin-bottom: 16px;">[OFFICE ADDRESS]<br>[CITY]<br>CAMEROON</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT FORM ============ -->
+    <section class="section bg-light" data-animate>
+      <div class="container" style="max-width: 820px;">
+        <div class="section-heading center">
+          <span class="eyebrow" style="justify-content:center;">Send A Message</span>
+          <h2>Tell Us About Your Project</h2>
+          <p>Fields marked <span class="required">*</span> are required.</p>
+        </div>
+
+        <form id="contact-form" class="card" style="padding: 40px;" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name">Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone</label>
+              <input type="tel" id="contact-phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject <span class="required">*</span></label>
+              <input type="text" id="contact-subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-project-type">Project Type</label>
+              <select id="contact-project-type" name="projectType">
+                <option value="">Select...</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="industrial">Industrial</option>
+                <option value="renovation">Renovation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-location">Location</label>
+              <input type="text" id="contact-location" name="location">
+            </div>
+            <div class="form-group full">
+              <label for="contact-budget">Estimated Budget</label>
+              <input type="text" id="contact-budget" name="budget" placeholder="e.g. [BUDGET RANGE]">
+            </div>
+            <div class="form-group full">
+              <label for="contact-message">Message <span class="required">*</span></label>
+              <textarea id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 28px;">Send Message</button>
+
+          <div class="form-status" id="contact-form-status"></div>
+
+          <p class="form-note">
+            This form is not yet connected to a backend or email service.
+            Submitting it will not send your message until a form processor
+            is wired up — see the comment in <code>js/main.js</code> for
+            where to connect one.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-root"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function initPage() {
+      initFormHandler("#contact-form", "#contact-form-status");
+    }
+  </script>
+</body>
+</html>

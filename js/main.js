@@ -33,7 +33,12 @@ const SITE_DATA = {
     phone: "+237 XXX XXX XXX",       // PLACEHOLDER — replace with real phone
     phoneHref: "tel:+237XXXXXXXXX",  // PLACEHOLDER
     whatsapp: "+237 XXX XXX XXX",    // PLACEHOLDER
-    whatsappHref: "https://wa.me/237XXXXXXXXX", // PLACEHOLDER
+       // PLACEHOLDER — replace the number. The ?text= part pre-fills a default
+    // message when someone opens a chat from any WhatsApp link on the site;
+    // edit whatsappMessage below to change the wording everywhere at once.
+    whatsappHref: "https://wa.me/237XXXXXXXXX?text=" + encodeURIComponent(
+      "Hello MCK Construction, I would like to enquire about a project."
+    ),
     email: "info@mck-construction-PLACEHOLDER.com", // PLACEHOLDER
     emailHref: "mailto:info@mck-construction-PLACEHOLDER.com", // PLACEHOLDER
     address: "[OFFICE ADDRESS], [CITY], CAMEROON", // PLACEHOLDER
